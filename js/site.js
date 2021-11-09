@@ -1,13 +1,13 @@
 //Get the string from the page.
 //Controller function.
 function getValue() {
-
+    //Check to make sure the alert is invisble
     document.getElementById("alert").classList.add("invisible");
-
-    let userString = document.getElementsByID("userString").value;
-
+    //Getting value from user input on app.html
+    let userString = document.getElementById("userString").value;
+    //Calling reverseString function and setting it to revString variable.
     let revString = reverseString(userString);
-
+    //Taking revString variable and sending it to displayString function.
     displayString(revString);
 }
 
